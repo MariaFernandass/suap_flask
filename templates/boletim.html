@@ -1,9 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body class="green lighten-4">
 {% extends 'base.html' %}
 
 {% block content %}
   <h2 class="mt-4 mb-4">Boletim</h2>
 
-  <div class="container">
+  <div class="container center-align">
     <h4 class="mb-3">Selecione o ano:</h4>
     <form action="{{url_for('boletim') }}" method="post">
       <div class="form-group">
@@ -41,5 +50,7 @@
         {% endfor %}
       </tbody>
     </table>
+</body>
+</html>
   {% endif %}
 {% endblock %}
